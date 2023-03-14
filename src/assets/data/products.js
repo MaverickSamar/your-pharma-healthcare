@@ -7,10 +7,10 @@ import productImg05 from "../images/single-sofa-02.jpg";
 import productImg06 from "../images/single-sofa-03.jpg";
 import productImg007 from "../images/single-sofa-04.png";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
+import productImg07 from "../images/0.jpg";
+import productImg08 from "../images/1.jpg";
+import productImg09 from "../images/0.jpg";
+import productImg10 from "../images/1.jpg";
 
 import productImg13 from "../images/phone-01.jpg";
 import productImg14 from "../images/phone-02.jpg";
@@ -32,7 +32,7 @@ const products = [
   {
     id: "01",
     productName: "Stone and Beam Westview ",
-    imgUrl: productImg01,
+    imgUrl: productImg09,
     category: "sofa",
     price: 193,
     shortDesc:
@@ -51,7 +51,7 @@ const products = [
   {
     id: "02",
     productName: "Rivet Bigelow Modern ",
-    imgUrl: productImg02,
+    imgUrl: productImg09,
     category: "sofa",
     price: 253,
     shortDesc:
@@ -74,7 +74,7 @@ const products = [
   {
     id: "03",
     productName: "Amazon Brand Modern Sofa",
-    imgUrl: productImg03,
+    imgUrl: productImg09,
     category: "sofa",
     price: 173,
     shortDesc:
@@ -96,7 +96,7 @@ const products = [
   {
     id: "26",
     productName: "Rivet Bigelow Modern ",
-    imgUrl: productImg02,
+    imgUrl: productImg09,
     category: "sofa",
     price: 253,
     shortDesc:
@@ -118,7 +118,7 @@ const products = [
   {
     id: "04",
     productName: "Fllufy Sheep Sofa",
-    imgUrl: productImg04,
+    imgUrl: productImg09,
     category: "sofa",
     price: 163,
     shortDesc:
@@ -141,7 +141,7 @@ const products = [
   {
     id: "05",
     productName: "Faux Velvet Sofa",
-    imgUrl: productImg05,
+    imgUrl: productImg09,
     category: "sofa",
     price: 163,
     shortDesc:
@@ -164,7 +164,7 @@ const products = [
   {
     id: "06",
     productName: "Fllufy Sheep Sofa",
-    imgUrl: productImg06,
+    imgUrl: productImg09,
     category: "sofa",
     price: 163,
     shortDesc:
@@ -185,9 +185,9 @@ const products = [
   },
   {
     id: "07",
-    productName: "Sakarias Armchair",
+    productName: "Your-Vita",
     imgUrl: productImg07,
-    category: "chair",
+    category: "Tablet",
     price: 99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -209,7 +209,7 @@ const products = [
   {
     id: "27",
     productName: "Modern Arm Sofa",
-    imgUrl: productImg007,
+    imgUrl: productImg09,
     category: "sofa",
     price: 173,
     shortDesc:
@@ -231,9 +231,9 @@ const products = [
 
   {
     id: "08",
-    productName: "Baltsar Chair",
+    productName: "Ofla-200",
     imgUrl: productImg08,
-    category: "chair",
+    category: "Tablet",
     price: 89,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -254,9 +254,9 @@ const products = [
 
   {
     id: "09",
-    productName: "Helmar Chair",
+    productName: "Your-Vita",
     imgUrl: productImg09,
-    category: "chair",
+    category: "Tablet",
     price: 112,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -277,8 +277,8 @@ const products = [
 
   {
     id: "10",
-    productName: "Apple iPhone 12 Pro",
-    imgUrl: productImg13,
+    productName: "Feverwin-500",
+    imgUrl: productImg09,
     category: "mobile",
     price: 799,
     shortDesc:
@@ -299,9 +299,9 @@ const products = [
   },
   {
     id: "25",
-    productName: "Sakarias Armchair",
+    productName: "Nimogen-para",
     imgUrl: productImg10,
-    category: "chair",
+    category: "Tablet",
     price: 99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -321,8 +321,8 @@ const products = [
   },
   {
     id: "11",
-    productName: "Apple iPhone 12 Max",
-    imgUrl: productImg14,
+    productName: "Ceflaa",
+    imgUrl: productImg09,
     category: "mobile",
     price: 799,
     shortDesc:
@@ -344,8 +344,8 @@ const products = [
 
   {
     id: "12",
-    productName: "Realme 8",
-    imgUrl: productImg15,
+    productName: "Cold-Buddy",
+    imgUrl: productImg09,
     category: "mobile",
     price: 599,
     shortDesc:
@@ -367,8 +367,8 @@ const products = [
 
   {
     id: "13",
-    productName: "One Plus Nord",
-    imgUrl: productImg16,
+    productName: "Ceflaa-SB",
+    imgUrl: productImg09,
     category: "mobile",
     price: 799,
     shortDesc:
@@ -390,8 +390,8 @@ const products = [
 
   {
     id: "14",
-    productName: "Apple iPhone 13 Pro",
-    imgUrl: productImg17,
+    productName: "maqucef-200",
+    imgUrl: productImg09,
     category: "mobile",
     price: 899,
     shortDesc:
@@ -413,8 +413,8 @@ const products = [
 
   {
     id: "15",
-    productName: "Samsung Galaxy S22",
-    imgUrl: productImg18,
+    productName: "Vomo-it",
+    imgUrl: productImg09,
     category: "mobile",
     price: 699,
     shortDesc:
@@ -459,9 +459,9 @@ const products = [
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
-    imgUrl: productImg20,
-    category: "watch",
+    productName: "monta-it",
+    imgUrl: productImg09,
+    category: "mobile",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -482,9 +482,9 @@ const products = [
 
   {
     id: "18",
-    productName: "Rolex Watch",
-    imgUrl: productImg21,
-    category: "watch",
+    productName: "Pantazole-DSR",
+    imgUrl: productImg09,
+    category: "mobile",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
