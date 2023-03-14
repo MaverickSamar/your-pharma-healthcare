@@ -85,7 +85,6 @@ const Home = () => {
               <h3 className='text-white fs-5 mb-3'>Best Prices</h3>
             </div>
             <Clock/>
-
             <motion.button whileHover={{scale:1.1}} className="buy__btn store__btn">
               <Link to='/shop'>Shop Now</Link>
             </motion.button>
