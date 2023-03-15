@@ -17,10 +17,9 @@ root.render(
       <Provider store={store}>
         <ToastContainer
           position="top-right"
-          autoClose={3000}
+          autoClose={1000}
           closeOnClick
           pauseOnHover
-          draggable
           theme="dark"
           />
 
