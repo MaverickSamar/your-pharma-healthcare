@@ -46,6 +46,27 @@
     margin-bottom: -100px;
 }
 
+.about__hero {
+    margin-top: 10px;
+    width: 70%;
+    height: 70%;
+    margin-left: 100px;
+
+}
+
+.about__img{
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about__desc{
+    margin-top: 50px;
+}
+.about__desc p{
+    font-size: 1.2rem;
+}
+
 .timer__count{
     background: var(--primary-color);
     height: 300px;
@@ -70,11 +91,7 @@
 
 }
 
-@media only screen and (max-width: 992px){
-    .hero__content h2{
-        font-size: 2rem;
-    }
-}
+
 @media only screen and (max-width: 992px){
     .hero__content h2{
         font-size: 2rem;
@@ -116,5 +133,12 @@
     .hero__content{
         padding-top: 0;
         margin-bottom: 40px;
+    }
+    .about__hero{
+        margin-top: -35px;
+    width: 70%;
+    height: 70%;
+    margin-left: 50px;
+
     }
 }

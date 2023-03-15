@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/eco-logo.png';
+
 import {ListGroup, ListGroupItem} from 'reactstrap';
 
 
@@ -22,7 +22,7 @@ const Footer = () => {
 
             </div>
               <p className="footer__text mt-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet fuga culpa rem, vel modi quisquam totam aspernatur a reiciendis. Ipsam exercitationem perspiciatis eum soluta pariatur eveniet suscipit maiores. Eveniet, maiores?
+              Incorporated in 2021, we are one of the best domestic pharmaceutical companies which offer the best quality of medicines. we deal in various acute and chronic therapeutic areas, as well as Central customer healthcare products.
               </p>
           </Col>
 

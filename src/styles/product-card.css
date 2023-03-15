@@ -34,6 +34,10 @@
     border-radius: 50px;
 }
 
+.product__img img{
+    border-radius: 10%;
+}
+
 @media only screen and (max-width: 992px)
 {
     .product__info h3 a{

@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/eco-logo.png';
+import logo from '../../assets/images/Logo.png';
 import {Container, Row} from 'reactstrap';
 import userIcon from '../../assets/images/user-icon.png';
 import {motion} from 'framer-motion';
