@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-
+import logo from '../../assets/images/Logo.png'
 import {ListGroup, ListGroupItem} from 'reactstrap';
 
 
@@ -15,33 +15,35 @@ const Footer = () => {
         <Row>
           <Col lg='4'>
             <div className="logo">
-              {/* <img src={logo} alt="logo" /> */}
+              <img src={logo} alt="logo" />
               <div>
-                <h1 className='text-white'>YourPharma</h1>
+                <h1 className='text-white'>YourPharmaHealthcare</h1>
               </div>
 
             </div>
-              <p className="footer__text mt-4">
+            <div className="footer__text-div">
+              <p className="footer__text">
               Incorporated in 2021, we are one of the best domestic pharmaceutical companies which offer the best quality of medicines. we deal in various acute and chronic therapeutic areas, as well as Central customer healthcare products.
               </p>
+            </div>
           </Col>
 
 
           <Col lg='3'>
           <div className="footer__quick-links">
             <h4 className='quick__links-title'>Top Categories</h4>
-            <ListGroup>
+            <ListGroup className='quick__links-category'>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
-                <Link to='#'>Tablets</Link>
+                <Link to='/shop'>Tablets</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
-                <Link to='#'>Pills</Link>
+                <Link to='/shop'>Pills</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
-                <Link to='#'>Syringes</Link>
+                <Link to='/shop'>Syringes</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
-                <Link to='#'>Syrups</Link>
+                <Link to='/shop'>Syrups</Link>
               </ListGroupItem>
             </ListGroup>
           </div>
@@ -51,24 +53,24 @@ const Footer = () => {
           <Col lg='2'>
           <div className="footer__quick-links">
             <h4 className='quick__links-title'>Useful Links</h4>
-            <ListGroup>
+            <ListGroup className='quick__links-category'>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
-                <Link to='#'>Home</Link>
+                <Link to='/home'>Home</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
-                <Link to='#'>Shop</Link>
+                <Link to='/shop'>Shop</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
-                <Link to='#'>About</Link>
+                <Link to='/about'>About</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
-                <Link to='#'>Cart</Link>
+                <Link to='/cart'>Cart</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
-                <Link to='#'>Login</Link>
+                <Link to='/login'>Login</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
-                <Link to='#'>Privacy Policy</Link>
+                <Link to='/privacy-policy'>Privacy Policy</Link>
               </ListGroupItem>
             </ListGroup>
           </div>
@@ -82,17 +84,16 @@ const Footer = () => {
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
                 <span><i class="ri-map-pin-line"></i></span>
 
-                <p>123, New Delhi</p>
+                <h6 className='text-white'>123, New Delhi</h6>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
               <span><i class="ri-phone-line"></i></span>
 
-              <p>+91 7078241377</p>
+              <h6 className='text-white'>+91 7078241377</h6>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
               <span><i class="ri-mail-line"></i></span>
-
-<p>yourpharmahealthcare@gmail.com</p>
+                <h6 className='text-white'>yourpharmahealthcare@gmail.com</h6>
               </ListGroupItem>
               
             </ListGroup>

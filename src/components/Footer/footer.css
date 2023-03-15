@@ -8,19 +8,25 @@
 .footer__text{
     line-height: 30px;
     color: rgba(255, 255, 255, 0.735);
+    margin-top: 20px;
 }
 
 .footer__quick-links ul{
     background: transparent !important;
+    font-size: 1.1rem;
 }
 .footer__quick-links ul li a{
     color: rgba(255, 255, 255, 0.735);
 }
 
+.quick__links-category{
+    margin-top: 10px;
+}
+
 .quick__links-title{
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 
 }
 
@@ -44,10 +50,9 @@
     text-align: center;
 }
 
-.footer__icons{
+/* .footer__icons{
     font-size: 1.2rem;
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-
-}
+} */
