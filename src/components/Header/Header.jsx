@@ -22,8 +22,8 @@ const nav__links = [
     display: 'Shop'
   },
   {
-    path: 'cart',
-    display: 'Cart'
+    path: 'login',
+    display: 'Login'
   },
 ]
 
