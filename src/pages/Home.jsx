@@ -19,7 +19,6 @@ const Home = () => {
   const [newArrivals, setNewArrivals] = useState([])
   const [newArrivalsT, setNewArrivalsT] = useState([])
 
-  const year = new Date().getFullYear()
 
   useEffect(() => {
     const filteredProducts = products.filter((item) => item.category === "Tablet");
@@ -43,7 +42,7 @@ const Home = () => {
           <Col ls='6' md='6'>
             <div className="hero__content">
               <p className="hero__subtitle">
-                Trending product in {year}
+                Your One Stop Pharmacy
               </p>
               <h2>Your Pharma Healthcare, Serving The Healthcare</h2>
               <p>Incorporated in 2021, we are one of the best domestic pharmaceutical companies which offer the best quality of medicines. we deal in various acute and chronic therapeutic areas, as well as Central customer healthcare products.</p>

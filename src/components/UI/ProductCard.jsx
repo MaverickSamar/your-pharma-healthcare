@@ -6,8 +6,7 @@ import { Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 import { useDispatch } from 'react-redux';
-import { cartActions
- } from '../../redux/slices/cartSlice';
+import { cartActions} from '../../redux/slices/cartSlice';
  import { toast } from 'react-toastify';
 
 const ProductCard = ({item}) => {
@@ -19,15 +18,11 @@ const ProductCard = ({item}) => {
       id: item.id,
       productName: item.productName,
       price: item.price,
-      image: item.imgUrl,
+      imgUrl: item.imgUrl,
     })
     );
     toast.success("Product added successfully.");
   }
-
-
-
-
 
   return (
     <Col lg='3' md='4' className='mb-2'>
@@ -41,7 +36,7 @@ const ProductCard = ({item}) => {
             <span>{item.category}</span>
         </div>
         <div className="product__card-bottom d-flex align-items-center justify-content-between p-2">
-            <span className="price">{item.price}</span>
+            <span className="price">₹{item.price}</span>
             <motion.span whileHover={{scale:1.2}} onClick={addToCart}>
               <i class='ri-add-line' ></i>
             </motion.span>
