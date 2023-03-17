@@ -17,7 +17,7 @@ const Signup = () =>
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [phonenumber, setPhonenumber] = useState();
+  const [phonenumber, setPhonenumber] = useState();
   const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);
 
