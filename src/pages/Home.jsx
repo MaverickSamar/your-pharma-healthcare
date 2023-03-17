@@ -48,6 +48,7 @@ const Home = () => {
               <p>Incorporated in 2021, we are one of the best domestic pharmaceutical companies which offer the best quality of medicines. we deal in various acute and chronic therapeutic areas, as well as Central customer healthcare products.</p>
 
               <motion.button whileHover={{scale:1.1}} className="in__btn"><Link to='/shop'>Shop Now</Link></motion.button>
+              
               </div>
           </Col>
           <Col lg='6' md='6'>

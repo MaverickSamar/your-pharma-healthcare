@@ -80,7 +80,7 @@ const Header = () => {
   // }
   const toggleProfileActions = () => {
     profileActionsRef.current.classList.toggle('show__profileActions');
-}
+  }
   return (
     <header className="header" ref={headerRef}>
       <Container>
@@ -154,8 +154,7 @@ const Header = () => {
                 <i class="ri-menu-line"></i>
               </span>
             </div>
-            </div>
-            
+            </div>          
           </div>
         </Row>
       </Container>
