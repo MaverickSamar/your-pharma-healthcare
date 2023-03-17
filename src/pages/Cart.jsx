@@ -56,10 +56,10 @@ const Cart = () => {
                   </div>
                   <p>Shipping charges:</p>
                   <div>
-                    <button className="buy__btn">
+                    <button className="in__btn">
                       <Link to='/shop'>Continue Shopping</Link>
                     </button>
-                    <button className="buy__btn">
+                    <button className="in__btn">
                       <Link to='/checkout'>Checkout</Link>
                     </button>
                   </div>

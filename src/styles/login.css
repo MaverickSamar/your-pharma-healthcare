@@ -22,3 +22,9 @@
     color: #fff;
 
 }
+.avatar__image{
+    width: 120px;
+    height: 150px;
+    display: flex;
+    align-items: start;
+}

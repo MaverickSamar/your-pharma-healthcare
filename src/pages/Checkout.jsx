@@ -63,8 +63,8 @@ const Checkout = () => {
                 </button>
               </div>
 
-                <button className="in__btn auth__btn w-100">
-                  Go to Cart
+                <button className="in__btn w-100">
+                  Go back to cart
                 </button>
             
             </Col>
