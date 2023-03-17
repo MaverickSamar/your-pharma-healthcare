@@ -144,7 +144,7 @@ const Header = () => {
                 ):(
                   <div>
                       <Link to='/login'><span>Login</span></Link>
-                      
+                      <Link to='/dashboard'><span>Dashboard</span></Link>
                     </div>
                 )
               }

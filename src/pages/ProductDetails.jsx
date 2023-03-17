@@ -80,7 +80,7 @@ const ProductDetails = () => {
             </Col>
             <Col lg="6" className="mt-4">
               <h2>{productName}</h2>
-              <div className="product__rating d-flex align-items-center gap-5 mb-3">
+              <div className="product__ratingmb-3">
                 <div>
                   <span>
                     <i class="ri-star-s-fill"></i>
@@ -110,7 +110,7 @@ const ProductDetails = () => {
 
                 <p className="mt-3">{shortDesc}</p>
 
-                <motion.button className="buy__btn" whileHover={{ scale: 1.2 }} onClick={addToCart}>
+                <motion.button className="in__btn" whileHover={{ scale: 1.2 }} onClick={addToCart}>
                   Add to Cart
                 </motion.button>
               </div>
@@ -174,7 +174,7 @@ const ProductDetails = () => {
                           <textarea rows={4} type="text" placeholder="Review Message..." ref={reviewMsg} required/>
                         </div>
                         
-                        <motion.button whileHover={{scale:1.2}} type="submit" className="buy__btn">Submit</motion.button>
+                        <motion.button whileHover={{scale:1.2}} type="submit" className="in__btn">Submit</motion.button>
 
                       </form>
                     </div>
