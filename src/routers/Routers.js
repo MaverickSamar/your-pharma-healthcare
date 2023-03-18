@@ -23,11 +23,11 @@ const Routers = () => {
         <Route path='shop/:id' element={<ProductDetails/>}/>
         <Route path='cart' element={<Cart/>}/>
 
-        <Route path='*/' element={<ProtectedRoutes/>}>
-        <Route path='checkout' element={<Checkout/>}/>
-        <Route path='dashboard/all-products' element={<AllProducts/>}/>
-        <Route path='dashboard/add-product' element={<AddProducts/>}/>
-        <Route path='dashboard' element={<Dashboard/>}/>
+        <Route path='/*' element={<ProtectedRoutes/>}>
+          <Route path='checkout' element={<Checkout/>}/>
+          <Route path='dashboard' element={<Dashboard/>}/>
+          <Route path='dashboard/all-products' element={<AllProducts/>}/>
+          <Route path='dashboard/add-products' element={<AddProducts/>}/>
         </Route>
 
         
