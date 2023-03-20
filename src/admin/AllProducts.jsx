@@ -1,10 +1,17 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import useGetData from '../custom-hooks/useGetData';
+import { db } from '../firebase.config';
+import { doc, deleteDoc } from 'firebase/firestore';
 
 const AllProducts = () => {
 
   const {data: productsData, loading} = useGetData('products');
+
+  const handleDelete = () => {
+
+    console.log("working");
+  }
 
 
   return (
@@ -35,7 +42,7 @@ const AllProducts = () => {
                           <td>{item.category}</td>
                           <td>{item.price}</td>
                           <td>
-                            <button className="btn-danger btn">Delete</button>
+                            <button className="btn-danger btn" onClick={handleDelete}>Delete</button>
                           </td>
                         </tr>
                       ))

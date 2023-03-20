@@ -9,7 +9,6 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase.config';
-
 import useAuth from '../../custom-hooks/useAuth';
 import { toast } from 'react-toastify';
 
@@ -128,13 +127,13 @@ const Header = () => {
                   <DropdownMenu>
                     {currentUser ? (
                       <>
-                      <DropdownItem><Link to='/dashboard'><span>Dashboard</span></Link></DropdownItem>
-                      <DropdownItem onClick={logout}><Link to='/home'><span>Logout</span></Link></DropdownItem>
+                      <Link to='/dashboard'><DropdownItem><span>Dashboard</span></DropdownItem></Link>
+                      <Link to='/home'><DropdownItem onClick={logout}><span>Logout</span></DropdownItem></Link>
                       </>
                      ) : (
                       <>
-                      <DropdownItem><Link to='/login'><span>Login</span></Link></DropdownItem>
-                      <DropdownItem><Link to='/signup'><span>Signup</span></Link></DropdownItem>
+                      <Link to='/login'><DropdownItem><span>Login</span></DropdownItem></Link>
+                      <Link to='/signup'><DropdownItem><span>Signup</span></DropdownItem></Link>
                       </>
                     )}
                   </DropdownMenu>
