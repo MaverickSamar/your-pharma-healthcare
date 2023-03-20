@@ -135,6 +135,7 @@ const AddProducts = () => {
                         onChange={(e) => setEnterCategory(e.target.value)}
                         required
                       >
+                        <option value="">Select one</option>
                         <option value="Tablet">Tablet</option>
                         <option value="Capsule">Capsule</option>
                         <option value="Syrup">Syrup</option>
