@@ -1,8 +1,10 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import './Header.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/Logo.png';
-import {Container, Row} from 'reactstrap';
+import {Container, Row, Dropdown, DropdownItem,
+  DropdownToggle,
+  DropdownMenu,} from 'reactstrap';
 import userIcon from '../../assets/images/user-icon.png';
 import {motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
@@ -39,6 +41,7 @@ const Header = () => {
   const totalQuantity = useSelector(state => state.cart.totalQuantity)
   const menuRef = useRef(null);
   const navigate = useNavigate();
+  const [showNav, setShowNav] = useState(false);
 
   const profileActionsRef = useRef(null);
 
@@ -79,8 +82,10 @@ const Header = () => {
   //   console.log(currentUser);
   // }
   const toggleProfileActions = () => {
-    profileActionsRef.current.classList.toggle('show__profileActions');
+    setShowNav(!showNav);
+    // profileActionsRef.current.classList.toggle('show__profileActions');
   }
+  console.log("showNav--", showNav);
   return (
     <header className="header" ref={headerRef}>
       <Container>
@@ -118,36 +123,26 @@ const Header = () => {
                   src={currentUser ? currentUser.photoURL : userIcon} 
                   alt="avatar" 
                   onClick={toggleProfileActions}
-                />
-
-                <div 
-                  className="profile__actions" 
-                  ref={profileActionsRef} 
-                  onClick={toggleProfileActions}
-                  >
-                  {/* {
-                    currentUser ? (
-                      <span>Logout</span>
-                      ):(
-                    <div>
-                      <Link to='/signup'>Signup</Link>
-                      <Link to='/login'>Login</Link>
-                    </div>
-                  )} */}
+                  />
                 </div>
-              </div>
-              {
-                currentUser? (
-                  <div onClick={logout}>
-                    <Link to='/home'><span>Logout</span></Link>
-                  </div>
-                ):(
-                  <div>
-                      <Link to='/login'><span>Login</span></Link>
-                      <Link to='/dashboard'><span>Dashboard</span></Link>
-                    </div>
-                )
-              }
+                <div>
+                <Dropdown nav isOpen={showNav} toggle={toggleProfileActions}>
+                  <DropdownMenu>
+                    {currentUser ? (
+                      <>
+                      <DropdownItem><Link to='/dashboard'><span>Dashboard</span></Link></DropdownItem>
+                      <DropdownItem onClick={logout}><Link to='/home'><span>Logout</span></Link></DropdownItem>
+                      </>
+                     ) : (
+                      <>
+                      <DropdownItem><Link to='/login'><span>Login</span></Link></DropdownItem>
+                      <DropdownItem><Link to='/signup'><span>Signup</span></Link></DropdownItem>
+                      </>
+                    )}
+                  </DropdownMenu>
+                </Dropdown>
+                </div>
+              
 
               <div className="mobile__menu">
               <span onClick={menuToggle}>
