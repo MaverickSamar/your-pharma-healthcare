@@ -139,7 +139,7 @@ const About = (args) => {
               </div>
             </Col>
             <Col lg="6" md="6">
-              <div className="about__desc">
+              <div className="about__desc fw-bold">
                 <p>
                   We provide the best quality with the best available in the
                   concerned location. We consider our quality is the main factor
@@ -170,7 +170,7 @@ const About = (args) => {
               </div>
             </Col>
             <Col lg="6" md="6">
-              <div className="about__desc">
+              <div className="about__desc fw-bold">
                 <p>
                   We never market any product without lab testing the product
                   whether the product contains the listed quantity of a drug or
@@ -200,7 +200,7 @@ const About = (args) => {
               </div>
             </Col>
             <Col lg="6" md="6">
-              <div className="about__desc">
+              <div className="about__desc fw-bold">
                 <p>
                   We provide the best quality with the best available in the
                   concerned location. We consider our quality is the main factor

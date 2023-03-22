@@ -3,12 +3,15 @@ import { Container, Row, Col } from 'reactstrap';
 import useGetData from '../custom-hooks/useGetData';
 import { db } from '../firebase.config';
 import { doc, deleteDoc } from 'firebase/firestore';
+import { toast } from 'react-toastify';
 
 const AllProducts = () => {
 
   const {data: productsData, loading} = useGetData('products');
-
-  const handleDelete = () => {
+  const handleDelete = async(id) => {
+    
+    await deleteDoc(doc(db, 'products', id))
+    toast.success("product deleted successfully");
 
     console.log("working");
   }
@@ -31,7 +34,7 @@ const AllProducts = () => {
               </thead>
               <tbody>
                 {
-                  loading? <h4 className='text-center py-5 fw-bold'>Loading...</h4>:
+                  loading? <h4 className='text-center pt-5 fw-bold'>Loading...</h4>:
                   (
                       productsData.map(item => (
                         <tr key={item.id}>
@@ -42,7 +45,7 @@ const AllProducts = () => {
                           <td>{item.category}</td>
                           <td>{item.price}</td>
                           <td>
-                            <button className="btn-danger btn" onClick={handleDelete}>Delete</button>
+                            <button className="btn-danger btn" onClick={()=>{handleDelete(item.id)}}>Delete</button>
                           </td>
                         </tr>
                       ))

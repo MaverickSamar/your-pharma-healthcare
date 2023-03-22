@@ -75,6 +75,9 @@ const Header = () => {
   const navigateToCart = () => {
     navigate('/cart');
   };
+  const navigateToHome = () => {
+    navigate('/home');
+  }
   // const debugging = () => {
   //   console.log(currentUser);
   // }
@@ -88,7 +91,7 @@ const Header = () => {
       <Container>
         <Row>
           <div className="nav__wrapper">
-            <div className="logo">
+            <div className="logo" onClick={navigateToHome}>
               <img src={logo} alt="logo" />
               <div>
                 <h1>YourPharma</h1>

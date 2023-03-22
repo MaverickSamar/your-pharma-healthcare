@@ -152,4 +152,8 @@
     margin-left: 50px;
 
     }
+    .about__img{
+        margin-left: -10px;
+        margin-left: 10px;
+    }
 }

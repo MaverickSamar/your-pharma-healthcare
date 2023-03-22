@@ -10,7 +10,7 @@ import products from '../assets/data/products'
 import ProductList from '../components/UI/ProductList';
 import counterImg from '../assets/images/counter.png';
 import Clock from '../components/UI/Clock';
-
+import useGetData from '../custom-hooks/useGetData';
 
 const Home = () => {
 
@@ -19,19 +19,20 @@ const Home = () => {
   const [newArrivals, setNewArrivals] = useState([])
   const [newArrivalsT, setNewArrivalsT] = useState([])
 
+  const {data: products, loading} = useGetData('products');
 
   useEffect(() => {
     const filteredProducts = products.filter((item) => item.category === "Tablet");
 
-    const filteredNewArrivals = products.filter((item) => item.category === 'Tablet')
+    const filteredNewArrivals = products.filter((item) => item.category === 'Syrup')
 
-    const filteredNewArrivalsT = products.filter((item) => item.category === 'mobile')
+    const filteredNewArrivalsT = products.filter((item) => item.category === 'Capsule')
 
     setPopularProducts(filteredProducts);
 
     setNewArrivals(filteredNewArrivals);
     setNewArrivalsT(filteredNewArrivalsT);
-  }, []);
+  }, [products]);
 
 
   return <Helmet title={"Home"}>
@@ -71,7 +72,11 @@ const Home = () => {
           </Col>
           <br />
           <br />
-          <ProductList data={popularProducts}/>
+          {
+            loading? <h5>Loading...</h5>:
+            (<ProductList data={popularProducts}/>)
+          }
+          
         </Row>
       </Container>
     </section>
@@ -104,8 +109,9 @@ const Home = () => {
           </Col>
           <br />
           <br />
-          <ProductList data={newArrivals}/>
-          <ProductList data={newArrivalsT}/>
+          {loading? <h5>Loading...</h5>:(
+            <ProductList data={newArrivals}/>
+          )}
         </Row>
       </Container>
     </section>

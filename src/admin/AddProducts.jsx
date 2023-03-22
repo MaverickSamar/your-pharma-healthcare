@@ -45,7 +45,7 @@ const AddProducts = () => {
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
             await addDoc(docRef, {
-              title: enterTitle,
+              productName: enterTitle,
               shortDesc: enterShortDesc,
               description: enterDesc,
               price: enterPrice,
@@ -135,12 +135,13 @@ const AddProducts = () => {
                         onChange={(e) => setEnterCategory(e.target.value)}
                         required
                       >
-                        <option value="">Select one</option>
+                        <option value="Other">Select one</option>
                         <option value="Tablet">Tablet</option>
                         <option value="Capsule">Capsule</option>
                         <option value="Syrup">Syrup</option>
                         <option value="Powder">Powder</option>
                         <option value="Equipment">Equipment</option>
+                        <option value="Other">Others</option>
                       </select>
                     </FormGroup>
                   </div>

@@ -20,7 +20,7 @@ const useGetData = (collectionName) => {
     }, [data, loading]);
 
 
-  return {data};
+  return {data, loading};
 }
 
 export default useGetData
