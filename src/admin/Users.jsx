@@ -4,6 +4,7 @@ import useGetData from '../custom-hooks/useGetData';
 import { deleteDoc, doc } from 'firebase/firestore';
 import { db } from '../firebase.config';
 import {toast} from 'react-toastify';
+import {Button} from 'reactstrap';
 
 
 const Users = () => {
@@ -24,7 +25,7 @@ const Users = () => {
             <table className="table">
               <thead>
                 <tr>
-                  <th>Image</th>
+                  {/* <th>Image</th> */}
                   <th>Username</th>
                   <th>Email</th>
                   <th>Action</th>
@@ -36,9 +37,9 @@ const Users = () => {
                 ):(
                   userData?.map(user => (
                     <tbody key={user.key}>
-                <td>
+                {/* <td>
                   <img src={user.photoUrl} alt="" />
-                </td>
+                </td> */}
                 <td>
                   {user.displayName}
                 </td>
@@ -46,7 +47,7 @@ const Users = () => {
                   {user.email}
                 </td>
                 <td>
-                  <button className='btn-danger btn' onClick={() => {deleteUser(user.uid)}}>Delete</button>
+                <Button outline color="danger" onClick={()=>{deleteUser(user.uid)}}>Delete</Button>
                 </td>
               </tbody>
                   ))

@@ -2,25 +2,25 @@ const serviceData = [
   {
     icon: "ri-truck-line",
     title: "Free Shipping",
-    subtitle: "Lorem ipsum dolor sit amet.",
+    subtitle: "Medinices at your doorstep.",
     bg: "#fdefe6",
   },
   {
     icon: "ri-refresh-line",
     title: "Easy Returns",
-    subtitle: "Lorem ipsum dolor sit amet.",
+    subtitle: "Return from your doorstep.",
     bg: "#ceebe9",
   },
   {
     icon: "ri-secure-payment-line",
     title: "Secure Payment",
-    subtitle: "Lorem ipsum dolor sit amet.",
+    subtitle: "Safe payment options.",
     bg: "#e2f2b2",
   },
   {
     icon: "ri-exchange-dollar-line",
-    title: " Back Guarantee",
-    subtitle: "Lorem ipsum dolor sit amet.",
+    title: "COD Accepted",
+    subtitle: "Cash on delivery.",
     bg: "#d6e5fb",
   },
 ];

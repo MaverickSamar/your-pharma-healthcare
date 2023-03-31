@@ -1,0 +1,6 @@
+- Remove avatar upload and add gmail image -done
+- Read acceptance
+- About on home page
+- Product Page 
+- Checkout
+- Order

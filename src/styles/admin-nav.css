@@ -76,3 +76,8 @@
     background: whitesmoke;
 
 }
+
+.nav__name{
+    color: white;
+    font-size: 1rem;
+}

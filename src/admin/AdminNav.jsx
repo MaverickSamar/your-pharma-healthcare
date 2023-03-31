@@ -4,28 +4,29 @@ import useAuth from '../custom-hooks/useAuth';
 import userIcon from '../assets/images/user-icon.png';
 import '../styles/admin-nav.css';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const admin__nav = [
   {
     display: 'Dashboard',
-    path: '/dashboard'
+    path: 'admin/dashboard'
   },
   {
     display: 'All Products',
-    path: '/dashboard/all-products'
+    path: 'admin/dashboard/all-products'
   },
   {
     display: 'Orders',
-    path: '/dashboard/orders'
+    path: 'admin/dashboard/orders'
   },
   {
     display: 'Users',
-    path: '/dashboard/users'
+    path: 'admin/dashboard/users'
   },
   {
     display: 'Add Products',
-    path: '/dashboard/add-products'
+    path: 'admin/dashboard/add-products'
   },
 ]
 
@@ -40,9 +41,11 @@ const AdminNav = () => {
       <div className="admin__nav-top">
         <Container>
           <div className="admin__nav-wrapper-top">
-            <div className="logo">
-              <h2>Your Pharma Healthcare</h2>
-            </div>
+            <Link to='/'>
+              <div className="logo">
+                <h2>Your Pharma Healthcare</h2>
+              </div>
+            </Link>  
 
             <div className="search__box">
               <input type="text" placeholder='Search...'/>
@@ -60,7 +63,8 @@ const AdminNav = () => {
                 <i class="ri-settings-5-line"></i>
               </span>
 
-              <img src={currentUser && currentUser.photoURL} alt="" />
+              <img src={userIcon} alt="" />
+              <span className='nav__name'>{currentUser.displayName}</span>
             </div>
           </div>
         </Container>

@@ -1,39 +1,49 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import CommonSection from '../components/UI/CommonSection';
 import Helmet from '../components/Helmet/Helmet';
 import { Container, Row, Col } from 'reactstrap';
 import '../styles/shop.css';
-import products from '../assets/data/products';
 import ProductList from '../components/UI/ProductList';
+import useGetData from '../custom-hooks/useGetData';
+
 
 const Shop = () => {
+  const [product, setProduct] = useState([]);
 
-  const [product, setProduct] = useState(products);
+  const {data: products, loading} = useGetData('products');
+
+  useEffect(() => {
+    const getPosts = () => {
+      setProduct(products);
+    }
+    getPosts();
+  });
+
 
   const handleFilter = e => {
     
     const filterValue = e.target.value;
-    if(filterValue === 'Tablet'){
+    if(filterValue === 'Tablet')
+    {
       const filteredProducts = products.filter(item => item.category === 'Tablet')
       setProduct(filteredProducts);
     }
-    if(filterValue === 'sofa'){
-      const filteredProducts = products.filter(item => item.category === 'sofas')
+    if(filterValue === 'Capsule'){
+      const filteredProducts = products.filter(item => item.category === 'Capsule')
       setProduct(filteredProducts);
     }
-    if(filterValue === 'mobile'){
-      const filteredProducts = products.filter(item => item.category === 'mobile')
+    if(filterValue === 'Syrup'){
+      const filteredProducts = products.filter(item => item.category === 'Syrup')
       setProduct(filteredProducts);
     }
-    if(filterValue === 'watch'){
-      const filteredProducts = products.filter(item => item.category === 'watch')
+    if(filterValue === 'Powder'){
+      const filteredProducts = products.filter(item => item.category === 'Powder')
       setProduct(filteredProducts);
     }
-    if(filterValue === 'wireless'){
-      const filteredProducts = products.filter(item => item.category === 'wireless')
+    if(filterValue === 'Equipment'){
+      const filteredProducts = products.filter(item => item.category === 'Equipment')
       setProduct(filteredProducts);
     }
-    
   }
 
   const handleSearch = e => {
@@ -95,7 +105,8 @@ const Shop = () => {
         <Container>
           <Row>
             {
-              product.length === 0 ? <h1 className='text-center fs-4'>No products available!</h1>: <ProductList data={product}/>
+              product.length === 0 ? <h1 className='text-center fs-4'>No products available!</h1>:( (loading)?(<h1 className='text-center fs-4'>Loading...</h1>) :
+              (<ProductList data={product}/>))
             }
           </Row>
         </Container>

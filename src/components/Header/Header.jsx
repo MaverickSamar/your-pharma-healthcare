@@ -15,7 +15,7 @@ import { toast } from 'react-toastify';
 
 const nav__links = [
   {
-    path: 'home',
+    path: '',
     display: 'Home'
   },
   {
@@ -76,7 +76,7 @@ const Header = () => {
     navigate('/cart');
   };
   const navigateToHome = () => {
-    navigate('/home');
+    navigate('/');
   }
   // const debugging = () => {
   //   console.log(currentUser);
@@ -108,10 +108,10 @@ const Header = () => {
               </ul>
             </div>
             <div className="nav__icons">
-            <span className="fav__icon">
+            {/* <span className="fav__icon">
               <i class="ri-heart-line"></i>
               <span className="badge">1</span>
-              </span>
+              </span> */}
               <motion.span whileHover={{scale:1.2}} className="cart__icon" onClick={navigateToCart}>
               <i class="ri-shopping-bag-line"></i>
               <span className="badge">{totalQuantity}</span>
@@ -120,7 +120,7 @@ const Header = () => {
               <div className='profile'>
                 <motion.img 
                   whileHover={{scale:1.2}} 
-                  src={currentUser ? currentUser.photoURL : userIcon} 
+                  src={userIcon} 
                   alt="avatar" 
                   onClick={toggleProfileActions}
                   />
@@ -130,8 +130,8 @@ const Header = () => {
                   <DropdownMenu>
                     {currentUser ? (
                       <>
-                      <Link to='/dashboard'><DropdownItem><span>Dashboard</span></DropdownItem></Link>
-                      <Link to='/home'><DropdownItem onClick={logout}><span>Logout</span></DropdownItem></Link>
+                      <Link to='/profile'><DropdownItem><span>Profile</span></DropdownItem></Link>
+                      <Link to='/'><DropdownItem onClick={logout}><span>Logout</span></DropdownItem></Link>
                       </>
                      ) : (
                       <>

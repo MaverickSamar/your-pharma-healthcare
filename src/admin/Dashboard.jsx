@@ -32,7 +32,7 @@ const Dashboard = () => {
           <Col className='lg-3'>
             <div className="orders__box">
             <h5>Total Orders</h5>
-              <span>123</span>
+              <span>12</span>
             </div>
           </Col>
         </Row>

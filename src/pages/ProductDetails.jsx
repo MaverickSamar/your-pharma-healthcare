@@ -155,7 +155,7 @@ const ProductDetails = () => {
                   className={`${tab === "rev" ? "active__tab" : ""}`}
                   onClick={() => setTab("rev")}
                 >
-                  Reviews ({reviews.length})
+                  {/* Reviews ({reviews.length}) */}
                 </h6>
               </div>
               {tab === "desc" ? (
@@ -165,7 +165,7 @@ const ProductDetails = () => {
               ) : (
                 <div className="product__review mt-5">
                   <div className="review__wrapper">
-                    <ul>
+                    {/* <ul>
                       {
                         reviews?.map((item, index) => (
                           <li key={index}>
@@ -175,7 +175,9 @@ const ProductDetails = () => {
                           </li>
                         ))
                       }
-                    </ul>
+                    </ul> */}
+
+
 
                     <div className="review__form d-flex align-items-center gap-5 rating__group">
                       <h4>Leave your review</h4>

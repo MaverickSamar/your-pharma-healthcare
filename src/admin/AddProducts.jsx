@@ -94,6 +94,7 @@ const AddProducts = () => {
                       required
                     />
                   </FormGroup>
+                  
                   <FormGroup className="form__group">
                     <span>Short Description</span>
                     <input

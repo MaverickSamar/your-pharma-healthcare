@@ -14,17 +14,24 @@ import AddProducts from '../admin/AddProducts';
 import AllProducts from '../admin/AllProducts';
 import Dashboard from '../admin/Dashboard';
 import Users from '../admin/Users';
-import Orders from '../admin/Orders'
+import Orders from '../admin/Orders';
+import Loader from '../components/UI/Loader';
+import Profile from '../pages/Profile';
+
+const LazyHome = React.lazy(() => import('../pages/Home'));
 const Routers = () => {
   return (
   <Routes>
-        <Route path='/' element={<Navigate to="home"/>}/>
-        <Route path='home' element={<Home/>}/>
+        {/* <Route path='/' element={<Navigate to="home"/>}/> */}
+        <Route path='/' element={
+        <React.Suspense fallback={<Loader/>}>
+          <LazyHome/>
+        </React.Suspense>}/>
         <Route path='shop' element={<Shop/>}/>
         <Route path='shop/:id' element={<ProductDetails/>}/>
         <Route path='cart' element={<Cart/>}/>
 
-        <Route path='/*' element={<ProtectedRoutes/>}>
+        <Route path='admin/*' element={<ProtectedRoutes/>}>
           <Route path='checkout' element={<Checkout/>}/>
           <Route path='dashboard' element={<Dashboard/>}/>
           <Route path='dashboard/all-products' element={<AllProducts/>}/>
@@ -33,7 +40,7 @@ const Routers = () => {
           <Route path='dashboard/orders' element={<Orders/>}/>
         </Route>
 
-        
+        <Route path='profile' element={<Profile/>}/>
         <Route path='login' element={<Login/>}/>
         <Route path='signup' element={<Signup/>}/>
         <Route path='about' element={<About/>}/>

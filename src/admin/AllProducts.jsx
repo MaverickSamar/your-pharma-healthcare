@@ -4,6 +4,7 @@ import useGetData from '../custom-hooks/useGetData';
 import { db } from '../firebase.config';
 import { doc, deleteDoc } from 'firebase/firestore';
 import { toast } from 'react-toastify';
+import { Button} from 'reactstrap';
 
 const AllProducts = () => {
 
@@ -41,11 +42,12 @@ const AllProducts = () => {
                           <td>
                             <img src={item.imgUrl} alt="" />
                           </td>
-                          <td>{item.title}</td>
+                          <td>{item.productName}</td>
                           <td>{item.category}</td>
                           <td>{item.price}</td>
                           <td>
-                            <button className="btn-danger btn" onClick={()=>{handleDelete(item.id)}}>Delete</button>
+                            <Button outline color="danger" onClick={()=>{handleDelete(item.id)}}>Delete</Button>
+                            {/* <button className="btn-danger btn" onClick={()=>{handleDelete(item.id)}}>Delete</button> */}
                           </td>
                         </tr>
                       ))

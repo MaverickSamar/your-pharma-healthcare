@@ -37,10 +37,10 @@ const Footer = () => {
                 <Link to='/shop'>Tablets</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
-                <Link to='/shop'>Pills</Link>
+                <Link to='/shop'>Capsules</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
-                <Link to='/shop'>Syringes</Link>
+                <Link to='/shop'>Injections</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
                 <Link to='/shop'>Syrups</Link>
@@ -84,12 +84,13 @@ const Footer = () => {
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
                 <span><i class="ri-map-pin-line"></i></span>
 
-                <h6 className='text-white'>123, New Delhi</h6>
+                <h6 className='text-white'>206, Biltigarh, Makkhanpur, Firozabad.</h6>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
               <span><i class="ri-phone-line"></i></span>
 
-              <h6 className='text-white'>+91 7078241377</h6>
+              <h6 className='text-white'>+91 8958209001</h6>
+              <h6 className='text-white'>+91 8958729001</h6>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
               <span><i class="ri-mail-line"></i></span>

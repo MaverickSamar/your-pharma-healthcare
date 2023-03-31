@@ -6,32 +6,28 @@ import '../styles/home.css'
 import { Link } from 'react-router-dom';
 import {motion} from 'framer-motion';
 import Services from '../services/Services';
-import products from '../assets/data/products'
 import ProductList from '../components/UI/ProductList';
 import counterImg from '../assets/images/counter.png';
 import Clock from '../components/UI/Clock';
 import useGetData from '../custom-hooks/useGetData';
+import CarouselComponent from '../components/UI/CarouselComponent'
 
 const Home = () => {
 
   const [popularProducts, setPopularProducts] = useState([]);
 
   const [newArrivals, setNewArrivals] = useState([])
-  const [newArrivalsT, setNewArrivalsT] = useState([])
 
   const {data: products, loading} = useGetData('products');
 
   useEffect(() => {
-    const filteredProducts = products.filter((item) => item.category === "Tablet");
+    const filteredProducts = (products || []).filter((item) => item.category === "Tablet");
 
-    const filteredNewArrivals = products.filter((item) => item.category === 'Syrup')
-
-    const filteredNewArrivalsT = products.filter((item) => item.category === 'Capsule')
+    const filteredNewArrivals = (products || []).filter((item) => item.category === 'Syrup');
 
     setPopularProducts(filteredProducts);
 
     setNewArrivals(filteredNewArrivals);
-    setNewArrivalsT(filteredNewArrivalsT);
   }, [products]);
 
 
@@ -58,6 +54,12 @@ const Home = () => {
             </div>
           </Col>
         </Row>
+      </Container>
+    </section>
+
+    <section>
+      <Container>
+        <CarouselComponent/>
       </Container>
     </section>
     <Services/>
@@ -115,9 +117,6 @@ const Home = () => {
         </Row>
       </Container>
     </section>
-
-
-  
   </Helmet>
 }
 
