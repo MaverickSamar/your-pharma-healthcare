@@ -96,7 +96,7 @@ export default class SimpleSlider extends Component {
             <br />
             <br />
             <Col lg="6" md="6">
-              <div className="about__img shift__left">
+              <div className="about__img shift__left shift">
                 <motion.img
                   src={priceImg}
                   alt=""

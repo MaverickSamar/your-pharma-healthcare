@@ -3,9 +3,15 @@
 }
 
 .about__img img{
-        width: 100%;
+        width: 110%;
         height: 100% !important;
-        object-fit: cover;}
+        object-fit: cover;
+        
+    }
+
+/* .shift{
+    margin-left: 40px;
+} */
 
 @media only screen and (max-width: 768) {
 
