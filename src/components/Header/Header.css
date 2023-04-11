@@ -133,7 +133,7 @@
     left: 0;
     z-index: 900;
     box-shadow: 3px 3px 8px -3px #ddd;
-    background: var(--card-bg-01);
+    background: var(--card-bg-02);
 }
 
 @media only screen and (max-width:768px) {

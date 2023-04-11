@@ -95,7 +95,6 @@ const Header = () => {
               <img src={logo} alt="logo" />
               <div>
                 <h1>Your Pharma Healthcare</h1>
-                
               </div>
             </div>
             <div className="navigation" ref={menuRef} onClick={menuToggle}>
