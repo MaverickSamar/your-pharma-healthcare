@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'reactstrap';
 import '../../styles/blog-common.css'
-const CommonSection = ({title}) => 
+const BlogCommon = ({title}) => 
 {
   return (
     <section className="common__section-blog">
@@ -12,4 +12,4 @@ const CommonSection = ({title}) =>
   )
 }
 
-export default CommonSection
+export default BlogCommon
