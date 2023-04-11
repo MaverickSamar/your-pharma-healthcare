@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import BlogCard from '../components/UI/BlogCard'
 import { Container, Row, Col } from 'reactstrap';
 import Helmet from '../components/Helmet/Helmet';
-import CommonSection from '../components/UI/CommonSection';
+import BlogCommon from '../components/UI/BlogCommon';
 // import ExpandableCards from '../components/UI/ExpandableCards';
 const Blog = () => {
 
@@ -14,7 +14,7 @@ const Blog = () => {
 
   return (
     <Helmet title="Blogs">
-      <CommonSection title="Blog"/>
+      <BlogCommon title="Blog"/>
       <section>
         <Container>
           <Row>
@@ -34,11 +34,22 @@ const Blog = () => {
         <Container>
           <Row>
             <Col>
-             {/* <ExpandableCards/> */}
+             blog different UIs goes here
             </Col>
             <Col>
-             
+              Blog element goes here
             </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
           </Row>
         </Container>
       </section>
