@@ -26,10 +26,10 @@ const nav__links = [
     path: 'shop',
     display: 'Products'
   },
-  // {
-  //   path: 'login',
-  //   display: 'Login'
-  // },
+  {
+    path: 'blog',
+    display: 'Blog'
+  },
 ]
 
 const Header = () => {
@@ -94,7 +94,7 @@ const Header = () => {
             <div className="logo" onClick={navigateToHome}>
               <img src={logo} alt="logo" />
               <div>
-                <h1>YourPharma</h1>
+                <h1>Your Pharma Healthcare</h1>
                 
               </div>
             </div>
