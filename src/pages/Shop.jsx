@@ -7,7 +7,8 @@ import ProductList from '../components/UI/ProductList';
 import useGetData from '../custom-hooks/useGetData';
 
 
-const Shop = () => {
+const Shop = () => 
+{
   const [product, setProduct] = useState([]);
 
   const {data: products, loading} = useGetData('products');
@@ -55,8 +56,6 @@ const Shop = () => {
     
   }
 
-
-
   return (
     <Helmet title="Products">
       <CommonSection title="Products"/>
@@ -97,8 +96,6 @@ const Shop = () => {
             </Col>
           </Row>
         </Container>
-
-
       </section>
 
       <section className='pt-0'>

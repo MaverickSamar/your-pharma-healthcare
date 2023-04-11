@@ -4,6 +4,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col } from "reactstrap";
 import { motion } from "framer-motion";
+import serviceImg from '../../assets/images/ser.jpg'
+import qualityImg from '../../assets/images/fun-3d-cartoon-illustration-indian-doctor.jpg'
+import priceImg from '../../assets/images/betterprice.jpg'
+import '../../styles/carousel.css';
+
+
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
@@ -31,7 +37,7 @@ export default class SimpleSlider extends Component {
                 <Col lg="6" md="6">
                   <div className="about__img">
                     <motion.img
-                      src="https://static.javatpoint.com/tutorial/quality-assurance/images/quality-assurance1.jpg"
+                      src={qualityImg}
                       alt=""
                     />
                   </div>
@@ -61,9 +67,9 @@ export default class SimpleSlider extends Component {
             <br />
             <br />
             <Col lg="6" md="6">
-              <div className="about__img">
+              <div className="about__img shift__left">
                 <motion.img
-                  src="https://img.freepik.com/free-vector/top-service-badge_1284-5019.jpg?w=740&t=st=1675619532~exp=1675620132~hmac=f68852f8fa9330bb1a6c85a3840c2c7f5bc5482f14e2949bcb7e091349469cab"
+                  src={serviceImg}
                   alt=""
                 />
               </div>
@@ -90,9 +96,9 @@ export default class SimpleSlider extends Component {
             <br />
             <br />
             <Col lg="6" md="6">
-              <div className="about__img">
+              <div className="about__img shift__left">
                 <motion.img
-                  src="https://www.imsresultscount.com/.a/6a00e54f98549c88340191046701ca970c-pi"
+                  src={priceImg}
                   alt=""
                 />
               </div>

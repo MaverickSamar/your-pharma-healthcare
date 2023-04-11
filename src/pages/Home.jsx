@@ -5,10 +5,10 @@ import HeroImg from '../assets/images/hero.png'
 import '../styles/home.css'
 import { Link } from 'react-router-dom';
 import {motion} from 'framer-motion';
-import Services from '../services/Services';
 import ProductList from '../components/UI/ProductList';
-import counterImg from '../assets/images/counter.png';
-import Clock from '../components/UI/Clock';
+// import Services from '../services/Services';
+// import counterImg from '../assets/images/counter.png';
+// import Clock from '../components/UI/Clock';
 import useGetData from '../custom-hooks/useGetData';
 import CarouselComponent from '../components/UI/CarouselComponent'
 
@@ -16,11 +16,12 @@ const Home = () => {
 
   const [popularProducts, setPopularProducts] = useState([]);
 
-  const [newArrivals, setNewArrivals] = useState([])
+  const [newArrivals, setNewArrivals] = useState([]);
 
   const {data: products, loading} = useGetData('products');
 
   useEffect(() => {
+
     const filteredProducts = (products || []).filter((item) => item.category === "Tablet");
 
     const filteredNewArrivals = (products || []).filter((item) => item.category === 'Syrup');
@@ -41,12 +42,14 @@ const Home = () => {
               <p className="hero__subtitle">
                 Your One Stop Pharmacy
               </p>
+
               <h2>Your Pharma Healthcare, Serving The Healthcare</h2>
+              
               <p>Incorporated in 2021, we are one of the best domestic pharmaceutical companies which offer the best quality of medicines. we deal in various acute and chronic therapeutic areas, as well as Central customer healthcare products.</p>
 
               <motion.button whileHover={{scale:1.1}} className="in__btn"><Link to='/shop'>Shop Now</Link></motion.button>
               
-              </div>
+            </div>
           </Col>
           <Col lg='6' md='6'>
             <div className="hero__img">
@@ -62,7 +65,7 @@ const Home = () => {
         <CarouselComponent/>
       </Container>
     </section>
-    <Services/>
+    {/* <Services/> */}
 
     <section className="trending__products">
       <Container>
@@ -83,7 +86,7 @@ const Home = () => {
       </Container>
     </section>
 
-    <section className="timer__count">
+    {/* <section className="timer__count">
       <Container>
         <Row>
           <Col lg='6' md='12'>
@@ -101,7 +104,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </section> */}
 
     <section className="new__arrivals">
       <Container>

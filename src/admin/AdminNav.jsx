@@ -28,6 +28,10 @@ const admin__nav = [
     display: 'Add Products',
     path: 'admin/dashboard/add-products'
   },
+  {
+    display: 'Add Blog',
+    path: 'admin/dashboard/add-blog'
+  },
 ]
 
 

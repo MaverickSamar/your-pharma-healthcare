@@ -17,6 +17,8 @@ import Users from '../admin/Users';
 import Orders from '../admin/Orders';
 import Loader from '../components/UI/Loader';
 import Profile from '../pages/Profile';
+import Blog from '../pages/Blog'
+import AddBlog from '../admin/AddBlog';
 
 const LazyHome = React.lazy(() => import('../pages/Home'));
 const Routers = () => {
@@ -38,12 +40,14 @@ const Routers = () => {
           <Route path='dashboard/add-products' element={<AddProducts/>}/>
           <Route path='dashboard/users' element={<Users/>}/>
           <Route path='dashboard/orders' element={<Orders/>}/>
+          <Route path='dashboard/add-blog' element={<AddBlog/>}/>
         </Route>
 
         <Route path='profile' element={<Profile/>}/>
         <Route path='login' element={<Login/>}/>
         <Route path='signup' element={<Signup/>}/>
         <Route path='about' element={<About/>}/>
+        <Route path='blog' element={<Blog/>}/>
   </Routes>
   )
 }

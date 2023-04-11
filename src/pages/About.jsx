@@ -4,14 +4,12 @@ import Helmet from "../components/Helmet/Helmet";
 import "../styles/home.css";
 import Carousel from '../components/UI/Carousel'
 import CarouselComponent from "../components/UI/CarouselComponent";
+import Services from "../services/Services";
 
 
 const About = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
-
-
-
 
   return (
     <Helmet title={"About"}>
@@ -44,11 +42,17 @@ const About = () => {
         </Container>
       </section>
 
+      <section>
+        <Container>
+          <Services/>
+        </Container>
+      </section>
       <section className="trending__products">
         <Container>
           <CarouselComponent/>
         </Container>
       </section>
+
 
     </Helmet>
   );

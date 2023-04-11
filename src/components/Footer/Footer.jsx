@@ -67,6 +67,9 @@ const Footer = () => {
                 <Link to='/cart'>Cart</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
+                <Link to='/blog'>Blog</Link>
+              </ListGroupItem>
+              <ListGroupItem className='ps-0 border-0 bg-transparent'>
                 <Link to='/login'>Login</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
@@ -94,7 +97,7 @@ const Footer = () => {
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
               <span><i class="ri-mail-line"></i></span>
-                <h6 className='text-white'>yourpharmahealthcare@gmail.com</h6>
+                <h6 className='text-white'>contact@yourpharmahealthcare.com</h6>
               </ListGroupItem>
               
             </ListGroup>
