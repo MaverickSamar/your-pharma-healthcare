@@ -17,11 +17,11 @@ const Footer = () => {
             <div className="logo">
               <img src={logo} alt="logo" />
               <div>
-                <h1 className='text-white'>YourPharmaHealthcare</h1>
+                <h1 className='text-white'>Your Pharma Healthcare</h1>
               </div>
 
             </div>
-            <div className="footer__text-div">
+            <div className="footer__text-div footer__mobileView">
               <p className="footer__text">
               Incorporated in 2021, we are one of the best domestic pharmaceutical companies which offer the best quality of medicines. we deal in various acute and chronic therapeutic areas, as well as Central customer healthcare products.
               </p>
@@ -30,8 +30,10 @@ const Footer = () => {
 
 
           <Col lg='3'>
-          <div className="footer__quick-links">
+          <div className="footer__quick-links footer__mobileView">
             <h4 className='quick__links-title'>Top Categories</h4>
+            <div className="list__groups">
+
             <ListGroup className='quick__links-category'>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
                 <Link to='/shop'>Tablets</Link>
@@ -46,13 +48,15 @@ const Footer = () => {
                 <Link to='/shop'>Syrups</Link>
               </ListGroupItem>
             </ListGroup>
+            </div>
           </div>
             
           </Col>
 
           <Col lg='2'>
-          <div className="footer__quick-links">
+          <div className="footer__quick-links footer__mobileView">
             <h4 className='quick__links-title'>Useful Links</h4>
+            <div className="list__groups">
             <ListGroup className='quick__links-category'>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
                 <Link to='/home'>Home</Link>
@@ -76,31 +80,36 @@ const Footer = () => {
                 <Link to='/privacy-policy'>Privacy Policy</Link>
               </ListGroupItem>
             </ListGroup>
+            </div>
+            
           </div>
           </Col>
 
 
           <Col lg='3'>
-          <div className="footer__quick-links">
+          <div className="footer__quick-links footer__mobileView">
             <h4 className='quick__links-title'>Contact</h4>
+            <div className="list__groups">
             <ListGroup className='footer__contact'>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
                 <span><i class="ri-map-pin-line"></i></span>
 
-                <h6 className='text-white'>206, Biltigarh, Makkhanpur, Firozabad.</h6>
+                <h6 className='contact__text'>206, Biltigarh, Makkhanpur, Firozabad.</h6>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
               <span><i class="ri-phone-line"></i></span>
 
-              <h6 className='text-white'>+91 8958209001</h6>
-              <h6 className='text-white'>+91 8958729001</h6>
+              <h6 className='contact__text'>+91 8958209001</h6>
+              <h6 className='contact__text'>+91 8958729001</h6>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2 bg-transparent'>
               <span><i class="ri-mail-line"></i></span>
-                <h6 className='text-white'>contact@yourpharmahealthcare.com</h6>
+                <h6 className='contact__text'>contact@yourpharmahealthcare.com</h6>
               </ListGroupItem>
               
             </ListGroup>
+            </div>
+            
           </div>
           </Col>
 

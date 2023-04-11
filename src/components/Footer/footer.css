@@ -56,3 +56,26 @@
     margin-bottom: 50px;
     text-align: center;
 } */
+
+.contact__text{
+    color: rgba(255, 255, 255, 0.735);
+    font-size: 0.6rem;
+}
+
+
+@media only screen and (max-width:768px){
+
+    .list__groups{
+        margin-bottom: 10px;
+    }
+    .footer__mobileView{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.735);
+        margin-bottom: 15px;
+    }
+
+    .contact__text{
+        color: rgba(255, 255, 255, 0.735);
+        font-size: 0.8rem;
+    }
+    
+}
