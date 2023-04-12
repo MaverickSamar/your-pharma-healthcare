@@ -44,7 +44,7 @@ export default class SimpleSlider extends Component {
                 </Col>
                 <Col lg="6" md="6">
                   <div className="about__desc fw-bold">
-                    <p>
+                    <p className='about__desc-c'>
                       We provide the best quality with the best available in the
                       concerned location. We consider our quality is the main
                       factor for our growth and brand values. Quality is the
@@ -76,7 +76,7 @@ export default class SimpleSlider extends Component {
             </Col>
             <Col lg="6" md="6">
               <div className="about__desc fw-bold">
-                <p>
+                <p className='about__desc-c'>
                   We never market any product without lab testing the product
                   whether the product contains the listed quantity of a drug or
                   not. if the report is not reported with the listed quantity of
@@ -105,7 +105,7 @@ export default class SimpleSlider extends Component {
             </Col>
             <Col lg="6" md="6">
               <div className="about__desc fw-bold">
-                <p>
+                <p className="about__desc-c">
                   We provide the best quality with the best available in the
                   concerned location. We consider our quality is the main factor
                   for our growth and brand values. Quality is the major factor

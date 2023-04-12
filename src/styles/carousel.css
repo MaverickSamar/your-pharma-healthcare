@@ -9,9 +9,10 @@
         
     }
 
-/* .shift{
-    margin-left: 40px;
-} */
+.about__desc-c{
+   margin: 100px 50px 50px 0;
+}
+
 
 @media only screen and (max-width: 768) {
 

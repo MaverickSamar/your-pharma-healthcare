@@ -13,7 +13,7 @@ const serviceData = [
   },
   {
     icon: "ri-secure-payment-line",
-    title: "Your Product",
+    title: "Our Product",
     subtitle: "Our products have exceptional quality with our COA reports being off the charts. As a global pharmaceutical company, we have the vision to make affordable medicines available to patients worldwide. Always providing the best of products has been our aim from the very beginning and we never compromise with it.",
     bg: "#e2f2b2",
   },
