@@ -26,10 +26,7 @@ const nav__links = [
     path: 'shop',
     display: 'Products'
   },
-  {
-    path: 'blog',
-    display: 'Blog'
-  },
+ 
 ]
 
 const Header = () => {

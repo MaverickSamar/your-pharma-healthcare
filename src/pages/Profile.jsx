@@ -87,21 +87,21 @@ const Profile = () => {
                             ):(
                                 <div>
                                     <div>
-                                        <h4>Name : <span>{currentUser.displayName}</span></h4>
+                                        <h2>Name : <span>{currentUser.displayName}</span></h2>
                                         <br />
-                                        <h4>Email : <span>{currentUser.email}</span></h4>
+                                        <h2>Email : <span>{currentUser.email}</span></h2>
                                         <br />
-                                        <h4>Password : <span>**********</span></h4>
+                                        <h2>Password : <span>**********</span></h2>
                                         <br />
-                                        <h4>Phone Number : <span>{currentUser.phoneNumber}</span></h4>
+                                        <h2>Phone Number : <span>{currentUser.phoneNumber}</span></h2>
                                         <br />
-                                        <h4>Address : <span>{currentUser.addl1}</span></h4>
+                                        <h2>Address : <span>{currentUser.addl1}</span></h2>
                                         <br />
-                                        <h4>Locality : <span>{currentUser.locality}</span></h4>
+                                        <h2>Locality : <span>{currentUser.locality}</span></h2>
                                         <br />
-                                        <h4>City : <span>{currentUser.city}</span></h4>
+                                        <h2>City : <span>{currentUser.city}</span></h2>
                                         <br />
-                                        <h4>Pincode : <span>{currentUser.pincode}</span></h4>
+                                        <h2>Pincode : <span>{currentUser.pincode}</span></h2>
                                         <br />
                                     </div>
                                     <Button outline color="success" onClick={()=>setUpdateProf(true)}>Update</Button>

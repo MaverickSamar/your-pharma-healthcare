@@ -3,7 +3,7 @@ import BlogCard from '../components/UI/BlogCard'
 import { Container, Row, Col } from 'reactstrap';
 import Helmet from '../components/Helmet/Helmet';
 import BlogCommon from '../components/UI/BlogCommon';
-// import ExpandableCards from '../components/UI/ExpandableCards';
+import ExpandableCards from '../components/UI/ExpandableCards';
 const Blog = () => {
 
   const [filterProducts, setFilteredProducts] = useState('');
@@ -22,8 +22,8 @@ const Blog = () => {
               <div className="filter__widget">
                 <select onChange={handleFilter}>
                   <option value="">Sort by date</option>
-                  <option value="">Ascending</option>
-                  <option value="">Descending</option>
+                  <option value="ascending">Ascending</option>
+                  <option value="descending">Descending</option>
                 </select>
               </div>
             </Col>
@@ -34,7 +34,7 @@ const Blog = () => {
         <Container>
           <Row>
             <Col>
-             blog different UIs goes here
+             <ExpandableCards/>
             </Col>
             <Col>
               Blog element goes here

@@ -9,7 +9,7 @@ const item = {
     img: 'https://aihms.in/blog/wp-content/uploads/2020/04/his1.jpg',
     category: 'Medical',
     title: 'How does blogging works',
-    desc: 'Wel I am a developer not a content writer so I do not know about this',
+    desc: 'Well I am a developer not a content writer so I do not know about this',
     author: 'Samarth Ranjan',
     time: '1 hour'
   }
