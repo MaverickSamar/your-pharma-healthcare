@@ -71,9 +71,6 @@ const Footer = () => {
                 <Link to='/cart'>Cart</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>
-                <Link to='/blog'>Blog</Link>
-              </ListGroupItem>
-              <ListGroupItem className='ps-0 border-0 bg-transparent'>
                 <Link to='/login'>Login</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0 bg-transparent'>

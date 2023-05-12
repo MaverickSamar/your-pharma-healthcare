@@ -3,7 +3,14 @@
 - About on home page - done
 - Product Page - done 
 - Loader - done
-- Checkout - 
-- Order - 
+
+
+- add admin
+- add address
+- orders
+- status
+- checkout
+- order placed
+- profile page
 
 

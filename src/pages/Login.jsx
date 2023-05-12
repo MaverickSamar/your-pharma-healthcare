@@ -29,10 +29,10 @@ const Login = () => {
 
       const user = userCredential.user;
 
-      console.log(user);
+      // console.log(user);
       setLoading(false);
       toast.success('Logged in successfully.');
-      navigate('/home');
+      navigate('/');
 
     }catch(error)
     {

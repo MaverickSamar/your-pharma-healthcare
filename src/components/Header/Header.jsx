@@ -82,7 +82,7 @@ const Header = () => {
     setShowNav(!showNav);
     // profileActionsRef.current.classList.toggle('show__profileActions');
   }
-  console.log("showNav--", showNav);
+  // console.log("showNav--", showNav);
   return (
     <header className="header" ref={headerRef}>
       <Container>
